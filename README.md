@@ -1,13 +1,46 @@
-# Heart-Stroke-Prediction
-This project presents a simple yet effective deep learning model for predicting the likelihood of heart stroke based on patient health data. It demonstrates the full machine learning pipeline — from data pre-processing to model training, evaluation, and optimization — with a focus on achieving high predictive accuracy.
+---
 
+#  Heart Stroke Prediction using Deep Learning
 
+Deep learning models for **early stroke risk detection** based on patient health data. This project demonstrates the full machine learning workflow — from **data preprocessing** to **model training, evaluation, and optimization** — with the goal of achieving **high accuracy and reliable predictions**.
 
 ---
 
+##  Features
+- ✔️ Multiple deep learning architectures: **CNN-LSTM**, **ANN**, and **Transformer**  
+- ✔️ Comprehensive evaluation metrics: Accuracy, Precision, Recall, F1-score, AUC  
+- ✔️ Training, validation, and test set comparisons  
+- ✔️ Modular code structure for easy experimentation and deployment  
+- ✔️ Healthcare-focused application for early risk screening  
 
-##  1. Training & Validation Performance
+---
 
+##  Installation
+```bash
+# Clone the repository
+git clone https://github.com/your-username/heart-stroke-prediction.git
+cd heart-stroke-prediction
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+---
+
+##  Usage
+```bash
+# Train the model
+python src/train_model.py
+
+# Evaluate the model
+python src/evaluate_model.py
+```
+
+---
+
+##  Results
+
+### 1. Training & Validation Performance
 | Model       | Training Accuracy (%) | Validation Accuracy (%) | Training Loss | Validation Loss |
 |-------------|------------------------|--------------------------|---------------|-----------------|
 | CNN-LSTM    | 89.42                 | 79.87                   | 0.24          | 0.51            |
@@ -16,8 +49,8 @@ This project presents a simple yet effective deep learning model for predicting 
 
 ---
 
-##  2. Test Set Evaluation  
-After completing training, all models were evaluated on the held-out test set (**2,808 samples**).
+### 2. Test Set Evaluation  
+Held-out test set (**2,808 samples**).
 
 | Model       | Test Accuracy (%) |
 |-------------|-------------------|
@@ -27,9 +60,7 @@ After completing training, all models were evaluated on the held-out test set (*
 
 ---
 
-##  3. Classification Metrics  
-Precision, Recall, and F1-score were computed for deeper evaluation.
-
+### 3. Classification Metrics
 | Model       | Precision (%) | Recall (%) | F1-Score (%) |
 |-------------|---------------|------------|--------------|
 | CNN-LSTM    | 93.88         | 80.22      | 87.05        |
@@ -38,8 +69,7 @@ Precision, Recall, and F1-score were computed for deeper evaluation.
 
 ---
 
-##  4. Overall Model Comparison
-
+### 4. Overall Model Comparison
 | Metric          | CNN-LSTM | ANN     | Transformer |
 |-----------------|----------|---------|-------------|
 | Test Accuracy   | 76.21%   | 84.78%  | 87.35%      |
@@ -50,12 +80,35 @@ Precision, Recall, and F1-score were computed for deeper evaluation.
 | Overall Rank    | 2nd      | 3rd     | 1st         |
 
 ---
+
 ##  Conclusion
-The comparative analysis of deep learning models for heart stroke prediction reveals clear distinctions in performance:
-- CNN-LSTM demonstrated solid training accuracy and strong generalization but struggled to maintain high test accuracy, indicating moderate robustness.
-- ANN achieved balanced performance with fast training speed and reliable precision/recall, making it a practical choice for lightweight applications.
-- Transformer consistently outperformed other models across nearly all metrics — achieving the highest test accuracy, F1-score, and AUC. Despite slower training, it exhibited superior generalization and overall ranking, proving to be the most effective architecture for this task.
-Overall, the Transformer model stands out as the best candidate for heart stroke prediction, offering a strong balance of accuracy, reliability, and generalization. This project highlights the potential of deep learning in healthcare applications, where accurate early detection can play a critical role in saving lives.
+The comparative analysis highlights that:
+- **CNN-LSTM** shows strong generalization but lower test accuracy.  
+- **ANN** balances speed and accuracy, making it practical for lightweight applications.  
+- **Transformer** consistently outperforms across metrics, achieving the highest accuracy, F1-score, and AUC.  
 
+👉 Overall, the **Transformer model** is the most effective architecture for heart stroke prediction, demonstrating superior generalization and reliability. This project underscores the potential of deep learning in healthcare, where accurate early detection can save lives.
 
+---
 
+## 📁 Repository Structure
+```
+├── data/                  # Raw and processed datasets
+├── notebooks/             # Jupyter notebooks for EDA and model development
+├── models/                # Saved model files
+├── src/                   # Core training and evaluation scripts
+├── requirements.txt       # Dependencies
+└── README.md              # Project overview
+```
+
+---
+
+##  Contributing
+Contributions are welcome! Please open an issue or submit a pull request for improvements.
+
+---
+
+##  License
+This project is licensed under the **MIT License**.
+
+---
