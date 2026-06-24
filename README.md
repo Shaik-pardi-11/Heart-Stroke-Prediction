@@ -7,11 +7,11 @@ Deep learning models for **early stroke risk detection** based on patient health
 ---
 
 ##  Features
-- ✔️ Multiple deep learning architectures: **CNN-LSTM**, **ANN**, and **Transformer**  
-- ✔️ Comprehensive evaluation metrics: Accuracy, Precision, Recall, F1-score, AUC  
-- ✔️ Training, validation, and test set comparisons  
-- ✔️ Modular code structure for easy experimentation and deployment  
-- ✔️ Healthcare-focused application for early risk screening  
+-  Multiple deep learning architectures: **CNN-LSTM**, **ANN**, and **Transformer**  
+-  Comprehensive evaluation metrics: Accuracy, Precision, Recall, F1-score, AUC  
+-  Training, validation, and test set comparisons  
+-  Modular code structure for easy experimentation and deployment  
+-  Healthcare-focused application for early risk screening  
 
 ---
 
@@ -87,11 +87,11 @@ The comparative analysis highlights that:
 - **ANN** balances speed and accuracy, making it practical for lightweight applications.  
 - **Transformer** consistently outperforms across metrics, achieving the highest accuracy, F1-score, and AUC.  
 
-👉 Overall, the **Transformer model** is the most effective architecture for heart stroke prediction, demonstrating superior generalization and reliability. This project underscores the potential of deep learning in healthcare, where accurate early detection can save lives.
+ Overall, the **Transformer model** is the most effective architecture for heart stroke prediction, demonstrating superior generalization and reliability. This project underscores the potential of deep learning in healthcare, where accurate early detection can save lives.
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 ```
 ├── data/                  # Raw and processed datasets
 ├── notebooks/             # Jupyter notebooks for EDA and model development
@@ -108,7 +108,3 @@ Contributions are welcome! Please open an issue or submit a pull request for imp
 
 ---
 
-##  License
-This project is licensed under the **MIT License**.
-
----
